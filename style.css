@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  color: purple;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input[type="number"] {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+select {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  width: 100%;
+}
+
+button[type="submit"], button[type="reset"] {
+  background-color: purple;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover, button[type="reset"]:hover {
+  background-color: #7a00ff;
+}
+
+.success-message {
+  background-color: #d9edf7;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgb(0 0 0 / 10%);
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  width: fit-content;
+}
+
+#result {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767px) {
+  form {
+    padding: 1rem;
+  }
+
+  label {
+    font-size: 0.875rem;
+  }
+
+  button[type="submit"], button[type="reset"] {
+    font-size: 0.875rem;
+  }
+  .success-message {
+    font-size: 15px;
+    margin-top: 0;
+  }
+}
