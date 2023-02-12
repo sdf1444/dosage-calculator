@@ -27,7 +27,7 @@
         <!-- Dropdown for selecting whether the patient is taking Stiripentumab -->
         <div class="form-group">
           <label for="isStiripentumab">Is the patient currently taking Stiripentumab?</label>
-          <select class="form-control" id="isStiripentumab" aria-label="Is the patient currently taking Stiripentumab?" required>
+          <select name="isStiripentumab" class="form-control" id="isStiripentumab" aria-label="Is the patient currently taking Stiripentumab?" required>
             <option value="">Select one</option>
             <option value="yes">Yes</option>
             <option value="no">No</option>
@@ -36,7 +36,7 @@
         <!-- Input field for the required dose (mg/kg/day) -->
         <div class="form-group my-3">
           <label for="dose">Required dose (mg/kg/day):</label>
-          <input type="number" step="0.1" min="0.2" max="0.8" class="form-control" id="dose" name="dose" aria-describedby="dose-help" aria-label="Enter the required dose in mg/kg/day" required>
+          <input type="number" class="form-control" id="dose" name="dose" step="0.1" min="0.2" max="0.8" aria-describedby="dose-help" aria-label="Enter the required dose in mg/kg/day" required>
           <small id="dose-help" class="form-text text-muted">Enter the required dose in mg/kg/day</small>
         </div>
         <!-- Input field for the patient's weight (kg) -->
