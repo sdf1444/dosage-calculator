@@ -176,7 +176,7 @@ $(document).ready(function () {
 
     // Check if the patient is taking stiripentumab and adjust the daily dose
     const maxDose = isTakingStiripentumab === "yes" ? 20 : 30;
-    dailyDose = dailyDose > maxDose ? maxDose : dailyDose;
+    dailyDose = dailyDose >= maxDose ? maxDose : dailyDose;
 
     // Calculate the twice daily dose
     const twiceDailyDose = (dailyDose / 5).toFixed(1);
